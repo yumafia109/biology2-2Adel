@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        
+button {
+     appearance: button;
+     backface-visibility: hidden;
+     background-color: #34db7f;
+     border-radius: 6px;
+     border-width: 0;
+     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+     box-sizing: border-box;
+     color: #fff;
+     cursor: pointer;
+     font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+     font-size: 100%;
+     height: 44px;
+     line-height: 1.15;
+     margin: 12px 0 0;
+     outline: none;
+     overflow: hidden;
+     padding: 0 25px;
+     position: relative;
+     text-align: center;
+     text-transform: none;
+     transform: translateZ(0);
+     transition: all .2s, box-shadow .08s ease-in;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     width: 100%;
+}
+
+button:disabled {
+     cursor: default;
+}
+
+button:focus {
+     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+button:hover {
+     background-color: #E01E79;
+     border: 2px solid white;
+     font-weight: 500;
+}
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div id="ali">
+            <center> <h1>اضغط الزر اللذي تريد تعريفه</h1></center>
+        <p>ومن ثم سيظهر لك تعريفه هنا </p>
+        </div>
+    </center>
+    <div> 
+
+    </div>
+    <button  id="ident">تعريف الجهاز العصبي</button>
+    <button style=" outline: invert;" id="senam">السيناميس</button>
+    <button style="outline: invert;" id='s1'> اقسامه</button>
+    <button style="outline: invert;" id='s2'> تكوين الجهاز العصبي الجسمي</button>
+    <button style="outline: invert;" id='s3'>الجهاز العصبي المحيطي</button>
+    <button style="outline: invert;" id='s4'> الجهاز السيمبثاوي والجار سيمبثاوي</button>
+    
+    <script>
+     let div= document.getElementById('ali')
+     let button = document.querySelectorAll('button')
+     button[0].onclick = function(){
+        div.textContent = `${button[0].textContent}
+        النظام الجسدي لمعالجة المعلومات والتواصل. يتلقى هذا الجهاز الرسائل، ويعالج المعلومات، ثم يرسل إشارات إلى بقية أجزاء الجسم ليخبرها بما ينبغي عليها القيام به
+        `
+
+     }
+     button[1].onclick = function(){
+        div.textContent = `${button[1].textContent}
+        ما هي منطقة التشابك العصبي؟
+التشابك العصبي أو ما يُسمّى بالاتصال العصبي هي العملية التي يحدث بها اتصال خلية عصبية واحدة مع خلية عصبية أخرى أو المؤثرات الأخرى مثل الخلايا العضلية أو الغدد.
+        `
+        
+     }
+     button[1].onclick = function(){
+        div.textContent = `${button[1].textContent}
+        ما هي منطقة التشابك العصبي؟
+التشابك العصبي أو ما يُسمّى بالاتصال العصبي هي العملية التي يحدث بها اتصال خلية عصبية واحدة مع خلية عصبية أخرى أو المؤثرات الأخرى مثل الخلايا العضلية أو الغدد.
+        `
+        
+     }
+     button[2].onclick = function(){
+        div.textContent = `${button[2].textContent.style.color='red'}
+
+        
+        لجهاز العصبي المركزي: ويتكون من الدماغ والنخاع الشوكي.
+والجهاز العصبي المحيطي: ويتكون من الأعصاب التي تنقل النبضات بين الجهاز العصبي المركزي وبقية الجسم.
+        `
+        
+        
+     }
+     button[3].onclick = function(){
+        div.textContent = `${button[3].textContent.style.color='red'}
+
+
+        1-مخ
+        2-نخاع شوكي
+        `
+       
+        
+     }
+    </script>
+</body>
+</html>
